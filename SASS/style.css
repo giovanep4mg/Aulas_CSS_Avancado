@@ -1,16 +1,43 @@
-body {
-  background-color: black;
+.div2 {
+  color: rgb(33, 183, 3);
+  background-color: rgba(0, 200, 255, 0.673);
+  border: 1px solid black;
+}
+.div2 b {
+  color: #dec129;
 }
 
-.drop-shadow {
-  text-shadow: 2px 1px 1px #ccc;
-  text-decoration: underline;
+.div2 {
+  color: rgb(70, 163, 244);
+  background-color: rgba(230, 245, 249, 0.673);
+  border: 1px solid black;
+}
+.div2 b {
+  color: #fb1e8c;
 }
 
-h1 {
-  color: lightblue;
+.div2 {
+  color: rgb(213, 255, 24);
+  background-color: rgba(230, 245, 249, 0.394);
+  border: 1px solid black;
+}
+.div2 b {
+  color: #1efb47;
 }
 
-p {
-  color: lightblue;
+html {
+  background-color: rgb(211, 223, 150);
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.div1 {
+  color: blue;
+  margin: 3px;
+  padding: 3px;
+  border: 1px solid black;
+}
+.div1 b {
+  color: red;
 }/*# sourceMappingURL=style.css.map */

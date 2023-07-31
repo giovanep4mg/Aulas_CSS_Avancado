@@ -1,0 +1,20 @@
+$cor-verde-2: rgb(70, 163, 244);
+$fundo-2: rgba(230, 245, 249, 0.673);
+$destaque-2: #fb1e8c;
+$borda-2: 1px solid black;
+
+@mixin marg-padd-2(){
+    margin: 3px;
+    padding: 3px;
+}
+
+.div2{
+    color: $cor-verde-2;
+    background-color: $fundo-2;
+    border: $borda-2;
+    @include marg-padd-2;
+
+    b{
+        color: $destaque-2;
+    }
+}

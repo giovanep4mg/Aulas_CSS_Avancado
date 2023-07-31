@@ -24,3 +24,8 @@
 b{
     color: red;
 }
+
+img{
+    width: -webkit-fill-available;
+    width: 60%;
+}

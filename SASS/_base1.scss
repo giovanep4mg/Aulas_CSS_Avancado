@@ -1,0 +1,20 @@
+$cor-verde-d1: rgb(33, 183, 3);
+$fundo-d1: rgba(0, 200, 255, 0.673);
+$destaque-d1: #dec129;
+$borda-d1: 1px solid black;
+
+@mixin marg-padd-1(){
+    margin: 3px;
+    padding: 3px;
+}
+
+.div1{
+    color: $cor-verde-d1;
+    background-color: $fundo-d1;
+    @include marg-padd-1;
+    border: $borda-d1;
+
+    b{
+        color: $destaque-d1;
+    }
+}
