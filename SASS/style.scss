@@ -1,13 +1,13 @@
-@import 'base1';
+@import 'base1', 'base2', 'base3';
 
-$background: rgb(211, 223, 150);
+$background: rgba(211, 223, 150, 0.349);
 $cor-azul: blue;
 $cor-vermelho: red;
 $borda: 1px solid black;
-$margem: 3px;
-$paddi: 3px;
+$margem: 10px;
+$paddi: 10px;
 
-@mixin cores($cor-azul){
+@mixin cores(){
     color: $cor-azul;
 }
 

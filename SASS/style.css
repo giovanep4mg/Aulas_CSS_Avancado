@@ -1,43 +1,49 @@
-.div2 {
+.div1 {
   color: rgb(33, 183, 3);
-  background-color: rgba(0, 200, 255, 0.673);
+  background-color: rgba(0, 200, 255, 0.274);
+  margin: 10px;
+  padding: 10px;
   border: 1px solid black;
 }
-.div2 b {
+.div1 b {
   color: #dec129;
 }
 
 .div2 {
   color: rgb(70, 163, 244);
-  background-color: rgba(230, 245, 249, 0.673);
+  background-color: rgba(230, 245, 249, 0.409);
   border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
 }
 .div2 b {
-  color: #fb1e8c;
+  color: #f2e608;
 }
 
-.div2 {
-  color: rgb(213, 255, 24);
+.div3 {
+  color: rgb(6, 6, 6);
   background-color: rgba(230, 245, 249, 0.394);
   border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
 }
-.div2 b {
-  color: #1efb47;
+.div3 b {
+  color: #fb1ef0;
 }
 
 html {
-  background-color: rgb(211, 223, 150);
+  background-color: rgba(211, 223, 150, 0.349);
   font-size: 30px;
   margin: 10px;
   padding: 10px;
 }
 
-.div1 {
+.div0 {
   color: blue;
-  margin: 3px;
-  padding: 3px;
+  margin: 10px;
+  padding: 10px;
   border: 1px solid black;
 }
-.div1 b {
+.div0 b {
   color: red;
 }/*# sourceMappingURL=style.css.map */

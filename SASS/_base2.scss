@@ -1,11 +1,13 @@
 $cor-verde-2: rgb(70, 163, 244);
-$fundo-2: rgba(230, 245, 249, 0.673);
-$destaque-2: #fb1e8c;
+$fundo-2: rgba(230, 245, 249, 0.409);
+$destaque-2: #f2e608;
 $borda-2: 1px solid black;
+$margem: 10px;
+$paddi: 10px;
 
 @mixin marg-padd-2(){
-    margin: 3px;
-    padding: 3px;
+    margin: $margem;
+    padding: $paddi;
 }
 
 .div2{
