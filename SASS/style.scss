@@ -10,12 +10,10 @@ $paddi: 10px;
 @mixin cores(){
     color: $cor-azul;
 }
-
 @mixin marg-padd(){
     margin: $margem;
     padding: $paddi;
 }
-
 html{
     background-color: $background;
     font-size: 30px;
@@ -26,7 +24,6 @@ html{
     @include cores;
     @include marg-padd;
     border: $borda;
-
     b{
         color: $cor-vermelho;
     }
