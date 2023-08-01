@@ -258,8 +258,8 @@
                 <br>
             </h2>
         </section>
-         <!--Aula4-G--Operadores Matemáticos-->
-         <section class="description">
+        <!--Aula4-G--Operadores Matemáticos-->
+        <section class="description">
             <header>
                 <h1 class="titulo">Operadores Matemáticos Math </h1>
             </header>
@@ -285,6 +285,138 @@
                 <b>true or false and false</b> == <b>true or (false and false)</b> <br>// retorna true "verdadeiro"<br>
                 <br>
                 <b>((1 + 2) * 3 + 4) * 5 </b> respota => 65 <br>
+                <br>
+            </h2>
+        </section>
+        <!--Aula4-G--Operadores Matemáticos exemplos práticas-->
+        <section class="description">
+            <header>
+                <h1 class="titulo">Operadores Matemáticos Math, na prática </h1>
+            </header>
+            <h2>
+                <div style="border: 1px solid black; margin: 10px; padding: 10px;">
+                    <b>Concatenação</b><br>
+                    *ligar(-se), juntar(-se) numa cadeia ou sequência lógica ou orgânica.<br>
+                    <br>
+                    // variável normal:<br>
+                    <b>$cor-azul: lightblue;</b> <br>
+                    <b>$cor-verde: lightgreen;</b> <br>
+                    <br>
+                    // fazendo a concatuação <br>
+                    $cor-azul: light<b>+</b> blue; <br>
+                    $cor-verde: light<b>+</b>green; <br>
+                    <br>
+                    <b>Atenção</b>: Não use aspas '' quando for adicionar:<br>
+                    Exemplo: $cor-azul: <b>'</b>light<b>' </b>+ blue<br>
+                    <br>
+                </div>
+                <div style="border: 1px solid black; margin: 10px; padding: 10px;">
+                    <b>Fazer cálculos</b><br>
+                    * Vamos usar como exemplo a margem.<br>
+                    <br>
+                    // variável normal<br>
+                    <b>$margem: 10% ;</b> <br>
+                    // variável adicionando a adição de mais 10 <br>
+                    <b>$margem: 10% + 10;</b> <br>
+                    <br>
+                    Veja como fica na página:<br>
+                    <div class="imagem">
+                        <img src="./imagens/print-pagina-adicao-sass-math.png" 
+                        alt="print da página depois de realizar a adição no código sass. ">
+                    </div>
+                    <br>
+                    Só usar os sinais matemáticos e os valores que você desejar.<br>
+                    <br>
+                    <b>Atenção:</b><br>
+                    Só não faça assim: <br>
+                    $margem: <b>0.5</b> / 2; <br>
+                    ** É preciso colocar o número inteiro => 50% <br>
+                    <br>
+                </div>
+                <div style="border: 1px solid black; margin: 10px; padding: 10px;">
+                    <b>Fazer comparações</b><br>
+                    * Vamos usar o "if", mas aqui é feito adicionando o "@".<br>
+                    <div style="border: 1px solid black; margin: 20px; padding: 20px; width: 10%;">
+                        <b>@if(){</b> <br>
+                        <br>
+                        <b>} @else {</b> <br>
+                        <br>
+                        <b>}</b> <br>
+                    </div>
+                    <br>
+                    Vamos mostrar um exemplo prático.<br>
+                    // variável <br>
+                    <b>$fundo-preto: black;</b> <br>
+                    <br>
+                    Veja na imagem como fica o código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/print-codigo-usando-if-sass.png" 
+                        alt="print do código usando o if no sass">
+                    </div>
+                    * Se o valor da variável "$fundo-preto" for "black", não vai mudar nada na página. <br> 
+                    <br>
+                    Veja a imagem da página:<br>
+                    <div class="imagem">
+                        <img src="./imagens/print-codigo-usando-if-sass-normal.png" 
+                        alt="print da página, usando a comparação do if, sem modificações no sass">
+                    </div>
+                    <br> 
+                    Agora faremos a mudança na comparação, trocando apenas a cor:<br>
+                    de <b>black</b> para <b>red</b>.<br>
+                    <br>
+                    Veja o que acontece com a página.<br>
+                    <div class="imagem">
+                        <img src="./imagens/print-codigo-usando-if-sass-modificado.png" 
+                        alt="print da página, usando a comparação do if, com modificações no sass">
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </h2>
+        </section>
+         <!--Aula4-H-Como remover as aspas de uma string-->
+         <section class="description">
+            <header>
+                <h1 class="titulo">Operadores Matemáticos Math, na prática </h1>
+            </header>
+            <h2>
+                Quando você concatenua uma string, pode ser que tenha aspas,<br>
+                e não será um valor válido para uma propriedade, não será possível usar ela.<br>
+                <br>
+                <b># { variavel + 1 }</b> Cria uma string sem aspas. <br>
+                <br>
+                Se for usar como número, pode não funcionar.<br>
+                <br>
+                Na prática:<br>
+                // variável <br>
+                <b>$cor-azul: light + blue;</b> => essa é a variável normal,<br>
+                funciona normalmente veja a página:<br>
+                <div class="imagem">
+                    <img src="./imagens/print-pagina-sass-usando-aspas.png" 
+                    alt="print da página, como fica sem usar aspas.">
+                </div>
+                <br>
+                Agora veremos como usando aspas na variável:<br>
+                // variável  <br>
+                <b>$cor-azul: 'light' + blue;</b> => adicionei nela as aspas, agora não funciona.<br>
+                Veja a imagem:<br>
+                <div class="imagem">
+                    <img src="./imagens/print-pagina-sass-usando-aspas-verdadeiro.png" 
+                    alt="print da página, como fica usando a aspas, não irá funcionar.">
+                </div>
+                <br>
+                Para que volte a funciona, você tira as aspas,<br>
+                ou pode modicar a propriedade, na hora de passar os valores:<br>
+                // exemplo <br>
+                <b>color: $cor-azul;</b> => o jeito de passar normal é assim. <br>
+                color:<b> #{$cor-azul}</b>;  => assim vai funcionar mesmo com aspas.<br>
+                <br>
+                Veja como fica na página, se funcionou ou não: <br>
+                <br>
+                <div class="imagem">
+                    <img src="./imagens/print-pagina-sass-com-aspas-funcionando.png" 
+                    alt="print da página, como fica usando a aspas, agora irá funcionar.">
+                </div>
                 <br>
             </h2>
         </section>
