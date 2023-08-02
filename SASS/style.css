@@ -1,22 +1,93 @@
 @charset "UTF-8";
-/* aqui terá que receber um parâmetro */
-* {
-  font-size: 30px;
-  margin: 10px;
-  padding: 10px;
-  background-color: rgb(214, 247, 162);
+/* Variáveis */
+/* mixins */
+html {
+  display: flexbox;
 }
 
+* {
+  display: flexbox;
+}
+
+.tab1 {
+  display: flex;
+}
+
+/* Hierarquia */
 body {
+  font-size: 30px;
+  background-color: rgb(231, 245, 207);
   margin: 10px;
   padding: 10px;
-  background-color: azure;
-  border: 2px solid black;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-body h1 {
-  color: lightblue;
+body .title {
+  color: blue;
+  font-size: 45px;
+}
+body .sub-title {
   font-size: 40px;
+}
+body p {
+  color: green;
+  display: block;
 }
 body b {
   color: red;
+}
+
+/* Looping, Repetição */
+#id-1 {
+  font-size: 19px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffb8b8;
+  display: flexbox;
+}
+
+#id-2 {
+  font-size: 23px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffbdbd;
+  display: flexbox;
+}
+
+#id-3 {
+  font-size: 27px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffc2c2;
+  display: flexbox;
+}
+
+#id-4 {
+  font-size: 31px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffc7c7;
+  display: flexbox;
+}
+
+#id-5 {
+  font-size: 35px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffcccc;
+  display: flexbox;
+}
+
+#id-6 {
+  font-size: 39px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffd1d1;
+  display: flexbox;
 }/*# sourceMappingURL=style.css.map */

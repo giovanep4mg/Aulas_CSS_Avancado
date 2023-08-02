@@ -429,19 +429,104 @@
                 <h1 class="titulo">Repetição / For / Looping- </h1>
             </header>
             <h2>
-                É possível o há um padrão de repetição entre alguma configuração.<br>
-                Exemplo:<br>
+                Não é muito comum usar o for, repetiçao mas pode ser usado em alguns casos específicos.<br>
+                É possível que haja algum padrão no código scss, para evitar ficar copiando e colando,<br>
+                por isso pode se usar a repetição.<br>
+                Exemplo da sintaxe:<br>
                 <div style="border: 1px solid black; margin: 10px; padding: 10px;">
                     <b>$cor: red;</b> <br>
                     <br>
                     <b>@for $i from 1 through 3 { </b> <br>
-                    _________<b>$nome: 'tipo' + $i</b> <br>
+                    _________<b>$nome: 'tipo' + $i</b> "tipo" pode ser uma classe, tag... <br>
                     _________<b>#{$nome}{</b> <br>
                     _________________<b>background-color: lighten($cor, $1 * 5%);</b> <br>
                     _________<b>} </b>    <br>
                     <b>}</b> <br>
                     <br>
                 </div>
+                Exemplo prático:<br>
+                <div style="border: 1px solid black; margin: 10px; padding: 10px;">
+                    Criei um projeto, com três divs colocando cada uma delas com um id diferente:<br>
+                    <b>id="div-1"</b>, <b>id="id-2"</b> e <b>id="id-3"</b> <br>
+                    <br>
+                    E para que elas recebam a mesma configuração de estilos, usarei o <b>@for</b>. <br>
+                    <b>@for $i from 1 through 3 {</b> <br>
+                    ____<b>$nome: '#id-' + $i;</b> <br>
+                    ____<b>#{$nome}{</b> <br>
+                    ___________<b>font-size: $tamanho;</b> <br>
+                    ___________<b>border: $borda;</b> <br>
+                    ____<b>}</b> <br>
+                    <b>}</b> <br>
+                    <br>
+                    ** Assim as três "divs" receberam essas configurações.<br>
+                    <br>
+                </div>
+                <div style="border: 1px solid black; margin: 10px; padding: 10px;">
+                    <b>Adicionar tamanhos diferentes nas divs</b> <br>
+                    * Pode ser feito adicionando o valor a mais no @tamanho, a cada repetição.  <br>
+                    <br>
+                    @for $i from 1 through 3 { <br>
+                    ____ $nome: '#id-' + $i; <br>
+                    ___________#{$nome}{ <br>
+                    _______________// só adicionar essa modificação no código:<br>
+                    _______________<b>font-size: $tamanho + ($i * 4);</b> <br>
+                    _______________ border: $borda; <br>
+                    _________ } <br>
+                    _} <br>
+                    <br>
+                    Veja a imagem de como fica a página:<br>
+                    <div class="imagem">
+                        <img src="./imagens/print-pagina-usando-for-sass.png"
+                        alt="print da página, de como fica depois de usar o @for do sass. ">
+                    </div>
+                    <br>
+                </div>
+                <div style="border: 1px solid black; margin: 10px; padding: 10px;">
+                    <b>Tonalidade de cores, diferentes nas divs</b> <br>
+                    <br>
+                    // Adiciona uma variável que recebe a cor vermelha <br>
+                    <b>$corDiv: red;</b> <br>
+                    <br>
+                    @for $i from 1 through 3 { <br>
+                    _______$nome: '#id-' + $i; <br>
+                    _________ #{$nome}{ <br>
+                    ________________ font-size: $tamanho;</b> <br>
+                    ________________ border: $borda; <br>
+                    ________________ //Adiciona essa linha de código dentro do @for <br>
+                    ____________ <b>background-color: lighten($corDiv, $i + %)25;</b> <br>
+                    _______ } <br>
+                    __ } <br>
+                    <br>
+                    <br>
+                    ** Cuidado  se colocar um valor muito alto, a cor muda demais, ai será outra cor.<br>
+                    <br>
+                    Veja a imagem de como fica a página:<br>
+                    <div class="imagem">
+                        <img src="./imagens/print-pagina-usando-for-para-modificar-cores.png"
+                        alt="print da página, de como fica as cores depois de usar o @for do sass. ">
+                    </div>
+                    <br>
+                </div>
+                ** Pode ser feita várias modificações.<br>
+            </h2>
+        </section>
+        <!--Aula4-J-Exercício 2-->
+        <section class="description">
+            <header>
+                <h1 class="titulo">Exercício 2 </h1>
+            </header>
+            <h2>
+                Vamos criar um projeto.<br>
+                <br>
+                * Você pode usar uma página sua como base, criando uma cópia.<br>
+                * Sugiro usar algum plug-in, como segundo opção o Node.js. <br>
+                * Se já tiver um CSS pode converte-lo para SASS.<br>
+                * Obrigatório usar: variáveis, mixins, cálculos, looping e hierarquia.<br>
+                <br>
+                Link do projeto criado, é uma simples página.<br>
+                <a href="https://giovanep4mg.github.io/pagina_exercicio2_usando_sass/">Exercicio 2</a> <br>
+                <br>
+                <br>
             </h2>
         </section>
         <!--Link para a próxima página-->
