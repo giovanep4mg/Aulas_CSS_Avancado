@@ -374,8 +374,8 @@
                 </div>
             </h2>
         </section>
-         <!--Aula4-H-Como remover as aspas de uma string-->
-         <section class="description">
+        <!--Aula4-H-Como remover as aspas de uma string-->
+        <section class="description">
             <header>
                 <h1 class="titulo">Operadores Matemáticos Math, na prática </h1>
             </header>
@@ -396,7 +396,7 @@
                     alt="print da página, como fica sem usar aspas.">
                 </div>
                 <br>
-                Agora veremos como usando aspas na variável:<br>
+                Agora veremos como funciona usando aspas na variável:<br>
                 // variável  <br>
                 <b>$cor-azul: 'light' + blue;</b> => adicionei nela as aspas, agora não funciona.<br>
                 Veja a imagem:<br>
@@ -405,10 +405,13 @@
                     alt="print da página, como fica usando a aspas, não irá funcionar.">
                 </div>
                 <br>
-                Para que volte a funciona, você tira as aspas,<br>
+                Para que volte a funcionar, você tira as aspas,<br>
                 ou pode modicar a propriedade, na hora de passar os valores:<br>
-                // exemplo <br>
+                <br>
+                // exemplo de como é colocado no código scss/sass <br>
                 <b>color: $cor-azul;</b> => o jeito de passar normal é assim. <br>
+                <br>
+                // modificado para funcionar<br>
                 color:<b> #{$cor-azul}</b>;  => assim vai funcionar mesmo com aspas.<br>
                 <br>
                 Veja como fica na página, se funcionou ou não: <br>
@@ -418,6 +421,27 @@
                     alt="print da página, como fica usando a aspas, agora irá funcionar.">
                 </div>
                 <br>
+            </h2>
+        </section>
+        <!--Aula4-I-Repetição / For / Looping-->
+        <section class="description">
+            <header>
+                <h1 class="titulo">Repetição / For / Looping- </h1>
+            </header>
+            <h2>
+                É possível o há um padrão de repetição entre alguma configuração.<br>
+                Exemplo:<br>
+                <div style="border: 1px solid black; margin: 10px; padding: 10px;">
+                    <b>$cor: red;</b> <br>
+                    <br>
+                    <b>@for $i from 1 through 3 { </b> <br>
+                    _________<b>$nome: 'tipo' + $i</b> <br>
+                    _________<b>#{$nome}{</b> <br>
+                    _________________<b>background-color: lighten($cor, $1 * 5%);</b> <br>
+                    _________<b>} </b>    <br>
+                    <b>}</b> <br>
+                    <br>
+                </div>
             </h2>
         </section>
         <!--Link para a próxima página-->
