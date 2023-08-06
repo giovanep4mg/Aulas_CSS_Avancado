@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import ReactDom from 'react-dom';
 import './index.css';
@@ -8,7 +6,6 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from './pages/home';
 import Sobre from  './pages/sobre';
 import Contato from './pages/contato';
-
 
 ReactDom.render(
   (

@@ -9,7 +9,7 @@ const Title=styled.h1`
 const Header = () => (
     <header>
         <Title>
-            Site teste
+            Site teste 
         </Title>
     </header>
 );
